@@ -1,6 +1,7 @@
 /**
  * DOM'CAR ESTÉTICA AUTOMOTIVA - INTERACTIVE BEFORE & AFTER COMPARISON SLIDER
  * Smooth mouse & touch draggable paint correction comparison
+ * Fully isolated to prevent mobile screen wobble
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,18 +48,23 @@ document.addEventListener('DOMContentLoaded', () => {
     isDragging = false;
   });
 
-  // Touch Events
+  // Touch Events (Isolated - Prevents horizontal page wobble)
   container.addEventListener('touchstart', (e) => {
     isDragging = true;
     if (e.touches[0]) setSliderPosition(e.touches[0].clientX);
   }, { passive: true });
 
-  window.addEventListener('touchmove', (e) => {
+  container.addEventListener('touchmove', (e) => {
     if (!isDragging) return;
+    if (e.cancelable) e.preventDefault();
     if (e.touches[0]) setSliderPosition(e.touches[0].clientX);
-  }, { passive: true });
+  }, { passive: false });
 
   window.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+
+  window.addEventListener('touchcancel', () => {
     isDragging = false;
   });
 

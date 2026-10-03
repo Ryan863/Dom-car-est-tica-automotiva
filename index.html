@@ -30,9 +30,11 @@
 </head>
 <body>
 
-  <!-- Ambient Glowing Background Lighting -->
-  <div class="ambient-flare" style="top: 10%; left: 5%; width: 450px; height: 450px; background: rgba(255, 22, 56, 0.08);"></div>
-  <div class="ambient-flare" style="top: 55%; right: 5%; width: 500px; height: 500px; background: rgba(255, 22, 56, 0.06);"></div>
+  <!-- Isolated Background Glow Layer (Locked to Viewport - Zero Overflow) -->
+  <div class="bg-ambient-layer">
+    <div class="bg-ambient-flare-top"></div>
+    <div class="bg-ambient-flare-bottom"></div>
+  </div>
 
   <!-- ==========================================================================
        TOP NAVBAR
@@ -151,10 +153,10 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 2.052.81 3.196.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.768-5.767zm7.505 5.766c-.001 4.14-3.366 7.505-7.505 7.505-1.326 0-2.571-.347-3.659-.955l-4.084 1.071 1.092-3.987c-.705-1.144-1.104-2.483-1.104-3.874 0-4.14 3.366-7.505 7.505-7.505 4.14 0 7.505 3.365 7.505 7.505z"/>
             </svg>
-            <span>Falar no WhatsApp: (49) 99199-9733</span>
+            <span>Falar no WhatsApp</span>
           </a>
           <a href="#horarios" class="btn btn-secondary">
-            <span>Ver Horários & Localização</span>
+            <span>Ver Horários & Local</span>
           </a>
         </div>
 
