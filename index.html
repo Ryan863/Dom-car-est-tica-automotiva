@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom'car Estética Automotiva | Videira - SC | Detalhamento & Lavagem a Pressão</title>
+  
+  <meta name="description" content="Dom'car Estética Automotiva em Videira - SC. Serviço especializado de lavagem a pressão, polimento técnico, vitrificação cerâmica e higienização interna de alto padrão. Agende pelo WhatsApp.">
+  <meta name="keywords" content="estética automotiva videira, dom'car videira sc, lavagem a pressão videira, polimento técnico, vitrificação cerâmica, higienização automotiva, santa lúcia videira">
+  <meta name="author" content="Dom'car Estética Automotiva">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dom'car Estética Automotiva | Videira - SC">
+  <meta property="og:description" content="Detalhamento técnico, lavagem a pressão de alta performance e proteção cerâmica em Videira - SC.">
+  <meta property="og:image" content="assets/images/hero-detailing.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo-emblem.jpg">
+  
+  <!-- Google Fonts: Syne, Space Grotesk, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Lighting -->
+  <div class="ambient-flare" style="top: 15%; left: 5%; width: 500px; height: 500px; background: rgba(255, 22, 56, 0.08);"></div>
+  <div class="ambient-flare" style="top: 55%; right: 5%; width: 600px; height: 600px; background: rgba(255, 22, 56, 0.06);"></div>
+
+  <!-- ==========================================================================
+       TOP NAVBAR
+       ========================================================================== -->
+  <header class="header-nav" id="main-nav">
+    <div class="container nav-inner">
+      <!-- Brand Logo & Identity -->
+      <a href="#inicio" class="brand-link" aria-label="Dom'car Estética Automotiva">
+        <div class="brand-emblem-wrap">
+          <img src="assets/images/logo-emblem.jpg" alt="Logo Dom'car" class="brand-emblem-img">
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">DOM'<span>CAR</span></span>
+          <span class="brand-tagline">Estética Automotiva</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-item-link">Início</a></li>
+          <li><a href="#antes-depois" class="nav-item-link">Antes & Depois</a></li>
+          <li><a href="#servicos" class="nav-item-link">Serviços</a></li>
+          <li><a href="#agendamento" class="nav-item-link">Agendamento</a></li>
+          <li><a href="#horarios" class="nav-item-link">Horários</a></li>
+          <li><a href="#localizacao" class="nav-item-link">Localização</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Right Actions -->
+      <div class="nav-actions">
+        <!-- Live Real-Time Status Pill -->
+        <div class="live-status-pill" id="nav-live-status" title="Status de funcionamento em tempo real">
+          <span class="status-dot open"></span>
+          <span class="status-label">Aberto Agora</span>
+        </div>
+
+        <a href="#agendamento" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">
+          <span>Agendar Horário</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Abrir Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Menu Mobile">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-text-block">
+          <span class="brand-title">DOM'<span>CAR</span></span>
+          <span class="brand-tagline">Estética Automotiva</span>
+        </div>
+        <button class="drawer-close-btn" aria-label="Fechar Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#inicio" class="mobile-nav-link">Início <span>→</span></a></li>
+        <li><a href="#antes-depois" class="mobile-nav-link">Antes & Depois <span>→</span></a></li>
+        <li><a href="#servicos" class="mobile-nav-link">Serviços <span>→</span></a></li>
+        <li><a href="#agendamento" class="mobile-nav-link">Agendamento <span>→</span></a></li>
+        <li><a href="#horarios" class="mobile-nav-link">Horários <span>→</span></a></li>
+        <li><a href="#localizacao" class="mobile-nav-link">Localização <span>→</span></a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="https://wa.me/5549991999733" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (DARK RACING / LUXURY RED NEON)
+         ========================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-bg-cover">
+        <img src="assets/images/hero-detailing.jpg" alt="Estética Automotiva Dom'car" class="hero-bg-img">
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge-top reveal-fade-up">
+          <span class="badge-text">Estética Automotiva & Lavagem a Pressão • Videira - SC</span>
+        </div>
+
+        <h1 class="hero-title reveal-fade-up" style="transition-delay: 0.15s;">
+          O BRILHO E A <span class="text-brand-gradient">PROTEÇÃO</span> QUE SEU CARRO MERECE.
+        </h1>
+
+        <p class="hero-description reveal-fade-up" style="transition-delay: 0.25s;">
+          Detalhamento técnico artesanal, vitrificação cerâmica de alta densidade e lavagem minuciosa a pressão. Tratamento de nível supercarro para preservar e valorizar o seu veículo.
+        </p>
+
+        <div class="hero-actions-row reveal-fade-up" style="transition-delay: 0.35s;">
+          <a href="#agendamento" class="btn btn-primary">
+            <span>Agendar Atendimento VIP</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#servicos" class="btn btn-secondary">
+            <span>Conhecer Serviços</span>
+          </a>
+          <a href="https://wa.me/5549991999733" target="_blank" rel="noopener" class="btn btn-brand-outline" title="WhatsApp Direto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 2.052.81 3.196.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.768-5.767zm7.505 5.766c-.001 4.14-3.366 7.505-7.505 7.505-1.326 0-2.571-.347-3.659-.955l-4.084 1.071 1.092-3.987c-.705-1.144-1.104-2.483-1.104-3.874 0-4.14 3.366-7.505 7.505-7.505 4.14 0 7.505 3.365 7.505 7.505z"/>
+            </svg>
+            <span>(49) 99199-9733</span>
+          </a>
+        </div>
+
+        <!-- Real-Time Status Notification Bar in Hero -->
+        <div class="live-status-bar reveal-fade-up" id="hero-status-badge" style="transition-delay: 0.45s;">
+          <div class="status-bar-left">
+            <span class="status-dot open"></span>
+            <div>
+              <div class="status-bar-title">Aberto Agora</div>
+              <div class="status-bar-subtitle">Segunda a Sexta das 08h às 12h e 13h às 17h30</div>
+            </div>
+          </div>
+          <a href="#horarios" class="status-bar-link">
+            <span>Ver Horários</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </div>
+
+        <!-- Trust Stats Strip -->
+        <div class="hero-stats-grid reveal-fade-up" style="transition-delay: 0.55s;">
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter-val" data-target="1500" data-prefix="+">+1.500</span>
+            </div>
+            <div class="stat-label">Veículos Detalhados</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter-val" data-target="100" data-suffix="%">100%</span>
+            </div>
+            <div class="stat-label">Produtos de Linha Nobre</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">
+              <span class="counter-val" data-target="5.0" data-float="true">5.0</span>
+              <span>★</span>
+            </div>
+            <div class="stat-label">Avaliação no Google</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE BEFORE & AFTER COMPARISON SLIDER
+         ========================================================================== -->
+    <section class="comparison-section" id="antes-depois">
+      <div class="container">
+        <div class="section-head-center reveal-fade-up">
+          <span class="section-tag">A Força da Transformação</span>
+          <h2 class="section-title">ANTES & DEPOIS <span class="text-brand-gradient">EM ALTA DEFINIÇÃO</span></h2>
+          <p class="section-subtitle">
+            Veja a restauração real com polimento técnico de alta precisão. Remoção completa de micro-riscos, teias de aranha e marcas circulares, restaurando o espelhamento perfeito.
+          </p>
+        </div>
+
+        <div class="slider-container-card reveal-scale-up">
+          <div class="comparison-wrapper" id="comparison-container" aria-label="Comparação antes e depois do polimento da pintura">
+            <!-- Badges -->
+            <div class="slider-badge slider-badge-after">Depois: Espelhamento 100%</div>
+            <div class="slider-badge slider-badge-before">Antes: Riscos & Swirls</div>
+
+            <!-- Before Layer (Background) -->
+            <img src="assets/images/swirls-before.jpg" alt="Pintura antes do polimento com marcas circulares e riscos" class="comparison-image comparison-before">
+
+            <!-- After Layer (Clipped Foreground) -->
+            <div class="comparison-after-wrap">
+              <img src="assets/images/mirror-after.jpg" alt="Pintura após o polimento e vitrificação com acabamento espelhado perfeito" class="comparison-image comparison-after">
+            </div>
+
+            <!-- Draggable Divider Line & Knob -->
+            <div class="comparison-divider">
+              <div class="comparison-handle-knob">
+                <div class="handle-arrows">
+                  <span>‹</span>
+                  <span>›</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="slider-helper-text reveal-fade-in">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7h8M8 12h8M8 17h8"/></svg>
+          Arraste o divisor lateralmente com o mouse ou o dedo para inspecionar a diferença
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SHOWCASE (SEM ORÇAMENTO - FOCO EM PADRÃO TÉCNICO & AGENDAMENTO)
+         ========================================================================== -->
+    <section class="services-section" id="servicos">
+      <div class="container">
+        <div class="section-head-center reveal-fade-up">
+          <span class="section-tag">Engenharia de Detalhamento</span>
+          <h2 class="section-title">SERVIÇOS DE <span class="text-brand-gradient">ALTA PERFORMANCE</span></h2>
+          <p class="section-subtitle">
+            Procedimentos técnicos executados com maquinário importado, iluminação cirúrgica de inspeção e insumos de padrão internacional.
+          </p>
+        </div>
+
+        <div class="services-grid stagger-parent">
+          
+          <!-- Card 1: Vitrificação Cerâmica -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/ceramic-beading.jpg" alt="Vitrificação Cerâmica e Nanotecnologia" class="service-img">
+              <span class="service-tag-badge">Nanotecnologia 9H</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Vitrificação Cerâmica & Proteção 9H</h3>
+              <p class="service-desc">
+                Camada protetora de nano-sílica que cria uma carapaça de alta dureza sobre o verniz, garantindo hidro-repelência extrema e proteção contra raios solares e agentes químicos.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Efeito lótus (hidro-repelência ativa)</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Proteção contra intempéries e fezes de aves</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Brilho profundo vitrificado permanente</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Vitrificação Cerâmica 9H')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Polimento Técnico -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/paint-correction.jpg" alt="Polimento Técnico e Correção de Verniz" class="service-img">
+              <span class="service-tag-badge">Restauração de Verniz</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Polimento Técnico & Correção</h3>
+              <p class="service-desc">
+                Etapas calculadas de corte, refino e lustro para nivelamento do verniz original, removendo hologramas, microrriscos e oxidação sem desgastar desnecessariamente a tinta.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Eliminação de marcas circulares (swirls)</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Nitidez óptica e profundidade da cor</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Acabamento tipo espelho (Mirror Finish)</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Polimento Técnico e Correção')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Lavagem Detalhada a Pressão & Snow Foam -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/foam-wash.jpg" alt="Lavagem Detalhada a Pressão com Snow Foam" class="service-img">
+              <span class="service-tag-badge">Pressão & Snow Foam</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Lavagem Detalhada a Pressão</h3>
+              <p class="service-desc">
+                Banho de espuma ativa pH neutro que encapsula a sujeira, combinado com jato d'água a pressão controlada e pincelamento milimétrico de emblemas, grelhas e caixas de roda.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Pré-lavagem sem atrito para evitar microrriscos</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Detalhamento minucioso de rodas e caixas</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Secagem técnica com microfibra e ar filtrado</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Lavagem Detalhada a Pressão')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Higienização Interna & Couro -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/interior-detailing.jpg" alt="Higienização Interna e Detalhamento de Couro" class="service-img">
+              <span class="service-tag-badge">Cockpit & Couro</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Higienização Interna & Couro</h3>
+              <p class="service-desc">
+                Cuidado minucioso do interior com vaporização térmica, limpeza profunda de carpetes, estofados e condicionamento de bancos de couro para restaurar a maciez e o toque original.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Hidratação nobre para couros legítimos</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Oxi-sanitização contra ácaros, bactérias e odores</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Proteção UV contra ressecamento de plásticos</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Higienização Interna & Couro')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Cristalização de Vidros -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/hero-detailing.jpg" alt="Cristalização de Vidros e Para-brisas" class="service-img" style="object-position: 80% 20%;">
+              <span class="service-tag-badge">Segurança & Visão</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Cristalização & Repelência de Vidros</h3>
+              <p class="service-desc">
+                Aplicação de selante hidrofóbico nas superfícies vítreas que repele a água da chuva sob alta velocidade, dispensando o uso frequente do limpador de para-brisa.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Visibilidade impecável sob temporais e neblina</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Prevenção de manchas de chuva ácida</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Maior segurança na estrada e rodovias</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Cristalização de Vidros')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Revitalização de Faróis -->
+          <article class="service-card reveal-child">
+            <div class="service-img-wrapper">
+              <img src="assets/images/paint-correction.jpg" alt="Restauração de Faróis e Plásticos" class="service-img" style="object-position: 20% 50%;">
+              <span class="service-tag-badge">Lentes Ópticas</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Restauração de Faróis & Plásticos</h3>
+              <p class="service-desc">
+                Recuperação química e mecânica das lentes de policarbonato queimadas pelo sol. Devolve a transparência original do facho de luz com proteção cerâmica de longa duração.
+              </p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Remoção do amarelado e opacidade</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Aumento considerável do alcance de iluminação</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Selamento cerâmico contra novo desgaste</span>
+                </li>
+              </ul>
+              <div class="service-footer">
+                <button type="button" class="btn btn-brand-outline" style="width: 100%;" onclick="selectServiceAndScroll('Restauração de Faróis')">
+                  <span>Agendar Este Procedimento</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SMART WHATSAPP APPOINTMENT (SEM ORÇAMENTO - AUTOMATIZADO)
+         ========================================================================== -->
+    <section class="appointment-section" id="agendamento">
+      <div class="container">
+        <div class="appointment-glass-card reveal-scale-up">
+          <div class="appointment-header">
+            <span class="section-tag">Agilidade & Exclusividade</span>
+            <h2>AGENDAMENTO <span class="text-brand-gradient">EXPRESSO NO WHATSAPP</span></h2>
+            <p>
+              Selecione os detalhes abaixo. Nosso sistema monta automaticamente sua mensagem estruturada e abre a conversa oficial no WhatsApp da Dom'car para confirmação da vaga.
+            </p>
+          </div>
+
+          <form id="appointment-form">
+            <!-- Passo 1: Categoria do Veículo -->
+            <div class="form-group-full" style="margin-bottom: 24px;">
+              <label class="form-label">1. Porte / Categoria do seu veículo</label>
+              <div class="pills-group">
+                <label class="pill-option">
+                  <input type="radio" name="vehicle-type" value="Hatch / Compacto" checked>
+                  <span class="pill-label">Hatch / Compacto</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="vehicle-type" value="Sedan">
+                  <span class="pill-label">Sedan</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="vehicle-type" value="SUV">
+                  <span class="pill-label">SUV</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="vehicle-type" value="Picape / Caminhonete">
+                  <span class="pill-label">Picape</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="vehicle-type" value="Esportivo / Premium">
+                  <span class="pill-label">Esportivo / Supercar</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Grid de Seleção -->
+            <div class="form-grid">
+              <!-- Passo 2: Procedimento -->
+              <div>
+                <label for="service-select" class="form-label">2. Procedimento Desejado</label>
+                <select id="service-select" class="form-control" required>
+                  <option value="Vitrificação Cerâmica 9H">Vitrificação Cerâmica 9H</option>
+                  <option value="Polimento Técnico e Correção">Polimento Técnico & Correção</option>
+                  <option value="Lavagem Detalhada a Pressão" selected>Lavagem Detalhada a Pressão</option>
+                  <option value="Higienização Interna & Couro">Higienização Interna & Couro</option>
+                  <option value="Cristalização de Vidros">Cristalização de Vidros</option>
+                  <option value="Restauração de Faróis">Restauração de Faróis</option>
+                  <option value="Tratamento Completo (Full Detailing)">Tratamento Completo (Full Detailing)</option>
+                </select>
+              </div>
+
+              <!-- Passo 3: Dia da Semana -->
+              <div>
+                <label for="day-select" class="form-label">3. Melhor Dia (Segunda a Sábado)</label>
+                <select id="day-select" class="form-control" required>
+                  <option value="Segunda-feira">Segunda-feira (08h às 17h30)</option>
+                  <option value="Terça-feira">Terça-feira (08h às 17h30)</option>
+                  <option value="Quarta-feira">Quarta-feira (08h às 17h30)</option>
+                  <option value="Quinta-feira">Quinta-feira (08h às 17h30)</option>
+                  <option value="Sexta-feira">Sexta-feira (08h às 17h30)</option>
+                  <option value="Sábado">Sábado (09h às 16h)</option>
+                  <option value="Próxima data disponível">Próxima data disponível</option>
+                </select>
+              </div>
+
+              <!-- Passo 4: Período -->
+              <div>
+                <label class="form-label">4. Turno de Preferência</label>
+                <div class="pills-group" style="margin-top: 6px;">
+                  <label class="pill-option">
+                    <input type="radio" name="preferred-period" value="Manhã (08:00 - 12:00)" checked>
+                    <span class="pill-label">Manhã</span>
+                  </label>
+                  <label class="pill-option">
+                    <input type="radio" name="preferred-period" value="Tarde (13:00 - 17:30)">
+                    <span class="pill-label">Tarde</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Passo 5: Nome & Modelo -->
+              <div>
+                <label for="client-name" class="form-label">5. Seu Nome & Modelo do Carro</label>
+                <input type="text" id="client-name" class="form-control" placeholder="Ex: Roberto - BMW 320i" required>
+              </div>
+
+              <!-- Observações Opcionais -->
+              <div class="form-group-full">
+                <label for="client-notes" class="form-label">6. Observações ou detalhes do carro (Opcional)</label>
+                <input type="text" id="client-notes" class="form-control" placeholder="Ex: Carro tem marcas de chuva ácida nos vidros...">
+              </div>
+            </div>
+
+            <!-- Botão de Envio Direto para WhatsApp -->
+            <div class="appointment-submit-row">
+              <button type="submit" class="btn btn-primary appointment-submit-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 2.052.81 3.196.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.768-5.767zm7.505 5.766c-.001 4.14-3.366 7.505-7.505 7.505-1.326 0-2.571-.347-3.659-.955l-4.084 1.071 1.092-3.987c-.705-1.144-1.104-2.483-1.104-3.874 0-4.14 3.366-7.505 7.505-7.505 4.14 0 7.505 3.365 7.505 7.505z"/>
+                </svg>
+                <span>Enviar Solicitação no WhatsApp</span>
+              </button>
+              <span class="appointment-note">Atendimento direto pelo número oficial (49) 99199-9733 • Confirmação rápida de horário</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OFFICIAL HOURS PANEL (PAINEL DE HORÁRIOS CONFORME IMAGEM)
+         ========================================================================== -->
+    <section class="schedule-section" id="horarios">
+      <div class="container">
+        <div class="schedule-grid-layout">
+          <!-- Left: Painel Dinâmico de Horários -->
+          <div class="schedule-card reveal-fade-up">
+            <div class="schedule-card-header">
+              <div class="schedule-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <span>Painel de Horários</span>
+              </div>
+              <div class="live-status-pill">
+                <span class="status-dot open"></span>
+                <span class="status-label">Videira - SC</span>
+              </div>
+            </div>
+
+            <!-- Tabela com os dados exatos da imagem fornecida -->
+            <div class="hours-table">
+              
+              <!-- Sábado: 09:00 - 16:00 -->
+              <div class="hours-row" data-day="6">
+                <span class="hours-day">
+                  <span>Sábado</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">09:00 – 16:00</span>
+              </div>
+
+              <!-- Domingo: Fechado -->
+              <div class="hours-row" data-day="0">
+                <span class="hours-day">
+                  <span>Domingo</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time closed">Fechado</span>
+              </div>
+
+              <!-- Segunda-feira -->
+              <div class="hours-row" data-day="1">
+                <span class="hours-day">
+                  <span>Segunda-feira</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">08:00–12:00, 13:00–17:30</span>
+              </div>
+
+              <!-- Terça-feira -->
+              <div class="hours-row" data-day="2">
+                <span class="hours-day">
+                  <span>Terça-feira</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">08:00–12:00, 13:00–17:30</span>
+              </div>
+
+              <!-- Quarta-feira -->
+              <div class="hours-row" data-day="3">
+                <span class="hours-day">
+                  <span>Quarta-feira</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">08:00–12:00, 13:00–17:30</span>
+              </div>
+
+              <!-- Quinta-feira -->
+              <div class="hours-row" data-day="4">
+                <span class="hours-day">
+                  <span>Quinta-feira</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">08:00–12:00, 13:00–17:30</span>
+              </div>
+
+              <!-- Sexta-feira -->
+              <div class="hours-row" data-day="5">
+                <span class="hours-day">
+                  <span>Sexta-feira</span>
+                  <span class="today-tag">HOJE</span>
+                </span>
+                <span class="hours-time">08:00–12:00, 13:00–17:30</span>
+              </div>
+
+            </div>
+
+            <div class="schedule-note-box">
+              <strong>Nota sobre atendimento:</strong> De segunda a sexta-feira temos intervalo para almoço entre as 12:00 e 13:00. O dia atual é identificado automaticamente com a tag <strong>HOJE</strong>.
+            </div>
+          </div>
+
+          <!-- Right: Benefícios da Pontualidade & Agendamento -->
+          <div class="schedule-info-col reveal-fade-up" style="transition-delay: 0.2s;">
+            <span class="section-tag">Compromisso com o Cliente</span>
+            <h3>ATENDIMENTO DEDICADO COM <span class="text-brand-gradient">HORA MARCADA</span></h3>
+            <p>
+              Na Dom'car, cada carro recebe dedicação exclusiva. Trabalhamos com agenda prévia para assegurar o tempo necessário para cura de vitrificadores, polimento minucioso e inspeção detalhada.
+            </p>
+
+            <div class="schedule-perks">
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Sem Filas e Sem Espera</div>
+                  <div class="perk-desc">Seu veículo tem box reservado para que o procedimento inicie pontualmente no horário acordado.</div>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Ambiente Seguro & Monitorado</div>
+                  <div class="perk-desc">Estúdio fechado com iluminação cirúrgica LED, livre de poeira externa e com máxima segurança.</div>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                </div>
+                <div>
+                  <div class="perk-title">Atualizações em Tempo Real</div>
+                  <div class="perk-desc">Você recebe fotos e vídeos do andamento do serviço diretamente no seu WhatsApp durante o processo.</div>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/5549991999733" target="_blank" rel="noopener" class="btn btn-primary">
+              <span>Reservar Minha Vaga</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OFFICIAL LOCATION & ROUTE (CONFORME DADOS DA IMAGEM)
+         ========================================================================== -->
+    <section class="location-section" id="localizacao">
+      <div class="container">
+        <div class="section-head-center reveal-fade-up">
+          <span class="section-tag">Fácil Acesso em Videira</span>
+          <h2 class="section-title">LOCALIZAÇÃO & <span class="text-brand-gradient">COMO CHEGAR</span></h2>
+          <p class="section-subtitle">
+            Localizado no bairro Santa Lúcia em Videira - SC, com estrutura planejada para receber seu veículo com conforto e total segurança.
+          </p>
+        </div>
+
+        <div class="location-layout">
+          <!-- Information Card -->
+          <div class="location-card-info reveal-fade-up">
+            <div>
+              <div class="brand-text-block" style="margin-bottom: 20px;">
+                <span class="brand-title">DOM'<span>CAR</span></span>
+                <span class="brand-tagline">Estética Automotiva de Alta Performance</span>
+              </div>
+
+              <div class="location-details-list">
+                
+                <!-- Endereço -->
+                <div class="location-detail-item">
+                  <div class="loc-icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="loc-label">Endereço Oficial</div>
+                    <div class="loc-value">Rua José Retore</div>
+                    <div class="loc-sub">Santa Lúcia, Videira - SC, 89564-534</div>
+                  </div>
+                </div>
+
+                <!-- Plus Code -->
+                <div class="location-detail-item">
+                  <div class="loc-icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <line x1="12" y1="2" x2="12" y2="6"></line>
+                      <line x1="12" y1="18" x2="12" y2="22"></line>
+                      <line x1="2" y1="12" x2="6" y2="12"></line>
+                      <line x1="18" y1="12" x2="22" y2="12"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="loc-label">Plus Code (Google Maps)</div>
+                    <div class="loc-value" style="font-family: var(--font-mono); font-size: 0.95rem;">XVMF+37 Santa Lúcia, Videira - SC</div>
+                    <div class="loc-sub">Localizador global de alta precisão</div>
+                  </div>
+                </div>
+
+                <!-- Telefone / WhatsApp -->
+                <div class="location-detail-item">
+                  <div class="loc-icon-wrap">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="loc-label">Telefone & WhatsApp</div>
+                    <div class="loc-value">(49) 99199-9733</div>
+                    <div class="loc-sub">Atendimento rápido em horário comercial</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Route and Copy Actions -->
+            <div class="location-action-buttons">
+              <button type="button" class="btn btn-primary" onclick="copyAddressToClipboard()">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copiar Endereço Completo</span>
+              </button>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+jos%C3%A9+retore+-+Santa+L%C3%BAcia%2C+Videira+-+SC%2C+89564-534" target="_blank" rel="noopener" class="btn btn-secondary">
+                  <span>Google Maps</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+                <a href="https://waze.com/ul?q=Rua%20jos%C3%A9%20retore%2C%20Santa%20L%C3%BAcia%2C%20Videira%20SC" target="_blank" rel="noopener" class="btn btn-secondary">
+                  <span>Waze</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Dark Theme Map Wrapper -->
+          <div class="location-map-wrapper reveal-fade-up" style="transition-delay: 0.2s;">
+            <div class="map-badge-overlay">
+              <div class="badge-company">Dom'car Estética Automotiva</div>
+              <div class="badge-city">Rua José Retore - Videira, SC</div>
+            </div>
+            <iframe 
+              class="location-map-iframe"
+              src="https://maps.google.com/maps?q=Rua+jos%C3%A9+retore+-+Santa+L%C3%BAcia%2C+Videira+-+SC&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Localização Dom'car Estética Automotiva Videira SC">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHY CHOOSE US / BRAND VALUE PILLARS
+         ========================================================================== -->
+    <section class="features-section">
+      <div class="container">
+        <div class="features-grid stagger-parent">
+          <div class="feature-box reveal-child">
+            <div class="feature-box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h4 class="feature-box-title">Lavagem a Pressão Técnica</h4>
+            <p class="feature-box-desc">Pressão calibrada e bicos de leque para garantir desincrustação profunda sem riscar a película de verniz.</p>
+          </div>
+
+          <div class="feature-box reveal-child">
+            <div class="feature-box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <h4 class="feature-box-title">Insumos de Padrão Nobre</h4>
+            <p class="feature-box-desc">Utilizamos compostos polidores de formulação alemã e nanopolímeros cerâmicos de altíssima durabilidade.</p>
+          </div>
+
+          <div class="feature-box reveal-child">
+            <div class="feature-box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h4 class="feature-box-title">Iluminação Cirúrgica</h4>
+            <p class="feature-box-desc">Lâmpadas com índice de reprodução de cor (CRI) elevado que revelam e corrigem qualquer microdefeito na pintura.</p>
+          </div>
+
+          <div class="feature-box reveal-child">
+            <div class="feature-box-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4 class="feature-box-title">Garantia & Cuidado</h4>
+            <p class="feature-box-desc">Respeito total às características de cada veículo e orientação de manutenção para conservar o brilho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="brand-link" style="cursor: default;">
+            <div class="brand-emblem-wrap">
+              <img src="assets/images/logo-emblem.jpg" alt="Logo Dom'car" class="brand-emblem-img">
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-title">DOM'<span>CAR</span></span>
+              <span class="brand-tagline">Estética Automotiva</span>
+            </div>
+          </div>
+          <p>
+            Excelência em detalhamento automotivo, lavagem a pressão e vitrificação cerâmica em Videira - SC. Paixão e precisão em cada centímetro do seu carro.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#antes-depois" class="footer-link">Antes & Depois</a></li>
+            <li><a href="#servicos" class="footer-link">Serviços</a></li>
+            <li><a href="#agendamento" class="footer-link">Agendamento</a></li>
+            <li><a href="#horarios" class="footer-link">Horários</a></li>
+            <li><a href="#localizacao" class="footer-link">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Procedimentos</h4>
+          <ul class="footer-links-list">
+            <li><a href="#servicos" class="footer-link">Vitrificação 9H</a></li>
+            <li><a href="#servicos" class="footer-link">Polimento Técnico</a></li>
+            <li><a href="#servicos" class="footer-link">Lavagem Detalhada</a></li>
+            <li><a href="#servicos" class="footer-link">Higienização de Couro</a></li>
+            <li><a href="#servicos" class="footer-link">Cristalização de Vidros</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contato & Endereço</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Rua José Retore - Santa Lúcia, Videira - SC</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="https://wa.me/5549991999733" target="_blank" rel="noopener" class="footer-link" style="color: #fff; font-weight: 700;">(49) 99199-9733</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Seg a Sex: 08h-12h, 13h-17h30 | Sáb: 09h-16h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="current-year">2026</span> <strong>Dom'car Estética Automotiva</strong>. Todos os direitos reservados.
+        </div>
+        <div>
+          Videira - Santa Catarina • Desenvolvido com Alta Performance Visual
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP CTA
+       ========================================================================== -->
+  <a href="https://wa.me/5549991999733" target="_blank" rel="noopener" class="floating-whatsapp-btn" id="floating-whatsapp" aria-label="Abrir conversa no WhatsApp">
+    <div class="whatsapp-pulse-ring">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.971.53 2.052.81 3.196.81 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.767-5.768-5.767zm7.505 5.766c-.001 4.14-3.366 7.505-7.505 7.505-1.326 0-2.571-.347-3.659-.955l-4.084 1.071 1.092-3.987c-.705-1.144-1.104-2.483-1.104-3.874 0-4.14 3.366-7.505 7.505-7.505 4.14 0 7.505 3.365 7.505 7.505z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-float-text">
+      <span class="whatsapp-float-label">Agendar no WhatsApp</span>
+      <span class="whatsapp-float-status">Atendimento Rápido</span>
+    </div>
+  </a>
+
+  <!-- GSAP Animation Engine via Cloudflare CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Core Scripts -->
+  <script src="assets/js/status-hours.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/appointment.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Set dynamic current year in footer
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

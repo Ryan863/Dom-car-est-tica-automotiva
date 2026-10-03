@@ -1,0 +1,141 @@
+/* ==========================================================================
+   DOM'CAR - ANIMATIONS & KEYFRAME EFFECTS
+   Microinteractions, GSAP Scroll Triggers, Neon Pulses & Glows
+   ========================================================================== */
+
+/* Radar Pulse for Live Status & WhatsApp */
+@keyframes pulseRadar {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Red Neon Ambient Glow Breathing */
+@keyframes neonBreath {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(255, 22, 56, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 35px rgba(255, 22, 56, 0.85));
+  }
+}
+
+/* Subtle Shimmer for High-End Cards */
+@keyframes lightSweep {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Floating / Drifting for Aesthetic Badges */
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Scroll Reveal Classes (Driven by GSAP / IntersectionObserver) */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+}
+
+.reveal-fade-in.is-revealed {
+  opacity: 1;
+}
+
+.reveal-scale-up {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale-up.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger Children Support */
+.stagger-parent .reveal-child {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stagger-parent.is-revealed .reveal-child:nth-child(1) { transition-delay: 0.1s; opacity: 1; transform: translateY(0); }
+.stagger-parent.is-revealed .reveal-child:nth-child(2) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+.stagger-parent.is-revealed .reveal-child:nth-child(3) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+.stagger-parent.is-revealed .reveal-child:nth-child(4) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+.stagger-parent.is-revealed .reveal-child:nth-child(5) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.stagger-parent.is-revealed .reveal-child:nth-child(6) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+
+/* Glowing Badge Pulse */
+.badge-pulse {
+  animation: neonBreath 3.5s infinite ease-in-out;
+}
+
+/* Button Hover Ripple */
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 0;
+  padding-bottom: 120%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.5s ease-out, opacity 0.3s ease-out;
+}
+
+.btn:active::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transition: 0s;
+}
+
+/* Subtle Glowing Light Beam Across Card Header */
+.beam-accent {
+  position: relative;
+}
+.beam-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-brand), transparent);
+  box-shadow: 0 0 10px var(--color-brand);
+}
